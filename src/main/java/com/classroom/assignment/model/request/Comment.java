@@ -12,9 +12,7 @@ public class Comment {
   @NotEmpty
   private String content;
 
-  // ↓アノテーションを追加してください↓
-  @NotEmpty
-  // ↑アノテーションを追加してください↑
+  @NotEmpty(message = "メールアドレスを入力してください")
   @Email(message = "メールアドレスを入力してください")
   private String mail;
 
